@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hệ thống phân tích dữ liệu báo cáo V1.0</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h1 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        button {
+            padding: 12px 25px;
+            margin: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Hệ thống phân tích dữ liệu báo cáo V1.0</h1>
+        <p>Chọn chức năng bạn muốn sử dụng:</p>
+        <div>
+            <button onclick="location.href='{{ url_for('baocaoDHSC_route') }}'">Báo cáo báo hỏng sửa chữa HNI.BHSC.005</button>
+            <button onclick="location.href='{{ url_for('baocaoPTTB_route') }}'">Báo cáo PTTB HNI.PTTB.001</button>
+        </div>
+    </div>
+</body>
+</html>
